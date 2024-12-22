@@ -1,4 +1,105 @@
-food_name,carbs,protein,fat,fiber,calories,glycemic_index
-apple,25,0.5,0.2,4,52,40
-banana,27,1.3,0.3,3,89,60
-oats,66,16,6,10,389,55
+Food Item,Calories,Glycemic Index,Sugar,Carbohydrates,Protein ,Fats,Fiber,Healthy/Unhealthy,
+Whole Milk,61,32,5,4.8,3.2,3.3,0,,Dairy
+Cheddar Cheese,402,0,0.5,1.3,24.9,33.1,0,,Dairy
+Greek Yogurt,97,11,4,3.6,10,4,0,,Dairy
+Cottage Cheese,98,30,1.2,3.4,11.1,4.3,0,,Dairy
+White Bread,265,75,5.3,49.2,9,3.2,2.7,,Wheat
+Whole Wheat Bread,247,71,4,43,13.2,2.5,7.4,,Wheat
+Oats,389,55,0.6,66.3,16.9,6.9,10.6,,Wheat
+Pasta,131,50,0.7,25,5,1.1,1.8,,Wheat
+Brown Rice,111,50,0.2,23,2.6,0.9,1.8,,Grain
+Quinoa,120,53,0.9,21.3,4.4,1.9,2.8,,Grain
+Apple,52,36,10.4,13.8,0.3,0.2,2.4,,Fruit
+Banana,89,51,12.2,22.8,1.1,0.3,2.6,,Fruit
+Orange,47,43,9.4,11.8,0.9,0.1,2.4,,Fruit
+Grapes,69,59,15.5,17.2,0.7,0.2,0.9,,Fruit
+Watermelon,30,72,6.2,7.6,0.6,0.2,0.4,,Fruit
+Strawberries,32,40,4.9,7.7,0.7,0.3,2,,Fruit
+Carrot,41,47,4.7,9.6,0.9,0.2,2.8,,Vegetable
+Broccoli,34,15,1.7,6.6,2.8,0.4,2.6,,Vegetable
+Spinach,23,15,0.4,3.6,2.9,0.4,2.2,,Vegetable
+Sweet Potato,86,70,4.2,20.1,1.6,0.1,3,,Vegetable
+Potato,77,78,1.2,17.5,2,0.1,2.2,,Vegetable
+Corn,86,53,6.3,19,3.3,1.2,2.7,,Vegetable
+Chickpeas,164,28,0.3,27.4,8.9,2.6,7.6,,Legume
+Lentils,116,32,1.8,20.1,9,0.4,7.9,,Legume
+Black Beans,132,30,0.3,23.7,8.9,0.5,8.7,,Legume
+Almonds,579,0,4.4,21.7,21.2,49.4,12.5,,Nuts
+Walnuts,654,15,2.6,13.7,15.2,65.2,6.7,,Nuts
+Cashews,553,22,5,30.2,18.2,43.9,3.3,,Nuts
+Eggs,155,0,1.1,1.1,13,11,0,,Protein
+Chicken Breast,165,0,0,0,31,3.6,0,,Protein
+Salmon,208,0,0,0,20.4,13.4,0,,Protein
+Beef,250,0,0,0,26,15,0,,Protein
+Tofu,76,15,0.3,1.9,8,4.8,0.3,,Protein
+Olive Oil,884,0,0,0,0,100,0,,Fat
+Butter,717,0,0.1,0.1,0.9,81,0,,Fat
+Avocado,160,15,0.7,8.5,2,14.7,6.7,,Fruit/Fat
+Coconut Oil,862,0,0,0,0,100,0,,Fat
+Honey,304,58,82.1,82.4,0.3,0,0.2,,Sweetener
+Maple Syrup,260,54,60.5,67.1,0.1,0,0,,Sweetener
+Dates,282,62,63.4,75,2.5,0.4,8,,Fruit
+Raisins,299,64,59.2,79.2,3.1,0.5,3.7,,Fruit
+Green Peas,81,22,5.7,14.5,5.4,0.4,5.7,,Vegetable
+Cucumber,16,15,1.7,3.6,0.7,0.1,0.5,,Vegetable
+Mushrooms,22,10,1,3.3,3.1,0.3,1,,Vegetable
+Bell Pepper,31,15,4.2,6,1,,,,Vegetable
+Almond Milk,13,30,0.4,0.3,0.4,1.1,0,,Dairy
+Skim Milk,34,32,5,4.9,3.4,0.1,0,,Dairy
+Ricotta Cheese,174,0,0.5,6.3,11.3,12.2,0,,Dairy
+Mozzarella Cheese,280,0,0.5,2.2,18.6,17.1,0,,Dairy
+Rye Bread,259,55,4.7,48.2,8.5,3.4,6.8,,Wheat
+Bagel,250,72,5.5,49.7,9.3,1.7,2.5,,Wheat
+Couscous,112,65,0.1,23.2,3.8,0.2,1.4,,Wheat
+Barley,354,28,0.8,73.5,9.9,1.2,17.3,,Grain
+Millet,119,71,0.4,23.3,3.5,1,1.8,,Grain
+Pear,57,38,9.8,15.2,0.4,0.1,3.1,,Fruit
+Papaya,43,60,5.9,11,0.5,0.3,1.7,,Fruit
+Mango,60,56,13.7,15,0.8,0.4,1.6,,Fruit
+Pineapple,50,66,9.9,13.1,0.5,0.1,1.4,,Fruit
+Blueberries,57,53,9.7,14.5,0.7,0.3,2.4,,Fruit
+Pomegranate,83,53,16.3,18.7,1.7,1.2,4,,Fruit
+Pears,57,38,9.8,15.2,0.4,0.1,3.1,,Fruit
+Kiwifruit,61,52,9,14.7,1.1,0.5,2.1,,Fruit
+Apricot,48,34,3.9,11.1,0.5,0.5,2,,Fruit
+Cantaloupe,34,65,8.2,8.2,0.8,0.2,0.9,,Fruit
+Lettuce,15,15,0.5,3,1.4,0.2,1.2,,Vegetable
+Asparagus,20,15,1.9,3.7,2.2,0.1,2.1,,Vegetable
+Cauliflower,25,15,1.9,4.9,1.9,0.3,2,,Vegetable
+Eggplant,25,15,3.5,5.9,1,0.2,3,,Vegetable
+Kale,49,15,0.9,8.8,4.3,0.9,4.1,,Vegetable
+Zucchini,17,15,1.7,3.1,1.2,0.3,1,,Vegetable
+Red Bell Pepper,31,15,4.2,6,1,0.3,2.1,,Vegetable
+Peas,81,22,5.7,14.5,5.4,0.4,5.7,,Vegetable
+Broccoli Florets,34,15,1.7,6.6,2.8,0.4,2.6,,Vegetable
+Rye Flour,338,54,0.6,71.1,8.3,1.6,15.2,,Flour
+Corn Flour,365,69,0.6,73,7.3,1.4,7.3,,Flour
+Whole Wheat Flour,340,51,0.4,72,13.2,2.5,12.5,,Flour
+Almond Flour,570,0,3.9,20,21,50,10,,Flour
+Coconut Flour,400,51,5,60,6,13,38,,Flour
+Egg (Whole),155,0,1.6,1.1,13,10.6,0,,Protein
+Chicken Breast (Cooked),165,0,0,0,31,3.6,0,,Meat
+Beef (Lean),250,0,0,0,26,15,0,,Meat
+Pork (Lean),242,0,0,0,27,14,0,,Meat
+Turkey Breast (Cooked),135,0,0,0,30,0.7,0,,Meat
+Salmon (Cooked),206,0,0,0,22,12,0,,Fish
+Cod (Cooked),105,0,0,0,23,1,0,,Fish
+Tuna (Canned),132,0,0,0,28,1,0,,Fish
+Lamb (Lean),294,0,0,0,25,21,0,,Meat
+Shrimp (Cooked),99,0,0,0,24,0.3,0,,Seafood
+Duck (Cooked),337,0,0,0,19,28,0,,Meat
+Lamb's Liver,191,0,0,4.5,30,6,0,,Organ Meat
+Veal (Lean),172,0,0,0,30,7,0,,Meat
+Sardines (Canned),208,0,0,0,25,11,0,,Fish
+Venison (Lean),158,0,0,0,30,3,0,,Meat
+Quail (Cooked),123,0,0,0,22,4.3,0,,Meat
+Mutton (Lean),294,0,0,0,25,21,0,,Meat
+Caviar,264,0,0,4.5,28,18,0,,Fish Product
+Rabbit Meat (Cooked),173,0,0,0,33,7,0,,Meat
+Octopus (Cooked),164,0,0,0,29,2,0,,Seafood
+Anchovies (Canned),210,0,0,0,29,10,0,,Seafood
+Tempeh,192,15,0.5,8.6,20.3,10.8,6,,Soy Product
+Tofu (Firm),144,15,0.7,1.9,15.7,8,2,,Soy Product
+Seitan,370,0,0,14,75,1.9,1.2,,Wheat Protein
+Chicken Liver,165,0,0,4,26,4.5,0,,Organ Meat
+Duck Eggs,185,0,0,1,13,13,0,,Egg
