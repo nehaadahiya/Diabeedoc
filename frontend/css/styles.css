@@ -39,23 +39,98 @@ nav ul li a {
 main {
     padding: 20px;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #caf0f8;
 }
 
-form input, form button {
-    padding: 10px;
+#hero h1 {
+    font-size: 3em;
+    margin: 0 0 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#hero button {
+    padding: 10px 20px;
     font-size: 1em;
-}
-
-form button {
-    background-color: #0077b6;
     color: white;
+    background-color: #0077b6;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.feature-card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    margin: 10px 0;
+    color: #0077b6;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.testimonial {
+    margin: 20px 0;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0077b6;
+    color: white;
+}
+
+footer a {
+    color: #caf0f8;
+    text-decoration: none;
+    margin: 0 5px;
 }
