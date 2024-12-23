@@ -255,3 +255,123 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* for login */
+  
+  .forum-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .forum-header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .forum-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .forum-header nav ul li {
+    margin-left: 20px;
+  }
+  
+  .forum-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .forum-header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .forum-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .new-post {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .new-post h2 {
+    margin-top: 0;
+  }
+  
+  #newPostForm textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  #newPostForm button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #newPostForm button:hover {
+    background-color: #45a049;
+  }
+  
+  .posts {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .posts h2 {
+    margin-top: 0;
+  }
+  
+  .post-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .post-item:last-child {
+    border-bottom: none;
+  }
+  
+  .post-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #4CAF50;
+  }
+  
+  .post-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .forum-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+  }

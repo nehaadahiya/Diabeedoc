@@ -30,3 +30,38 @@ form?.addEventListener("submit", async (e) => {
     resultDiv.innerHTML = `<p style="color: red;">Failed to connect to the server.</p>`;
   }
 });
+//community form
+// Add event listener for the new post form
+const newPostForm = document.getElementById("newPostForm");
+const postList = document.getElementById("postList");
+
+newPostForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Get the content of the new post
+  const postContent = document.getElementById("postContent").value;
+
+  if (postContent.trim() === "") {
+    alert("Please write something before posting.");
+    return;
+  }
+
+  // Create a new post element
+  const postItem = document.createElement("div");
+  postItem.classList.add("post-item");
+
+  const postTitle = document.createElement("h3");
+  postTitle.textContent = "New Discussion";
+
+  const postBody = document.createElement("p");
+  postBody.textContent = postContent;
+
+  postItem.appendChild(postTitle);
+  postItem.appendChild(postBody);
+
+  // Add the new post to the post list
+  postList.insertBefore(postItem, postList.firstChild);
+
+  // Clear the form
+  document.getElementById("postContent").value = "";
+});

@@ -7,14 +7,46 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="forum-header">
       <h1>Community Forum</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section>
-        <h2>Discussions</h2>
-        <p>Join the discussion and connect with others!</p>
+    <section>
+      <h2>Discussions</h2>
+      <p>Join the discussion and connect with others!</p>
+    </section>
+    <main class="forum-content">
+      <section class="new-post">
+        <h2>Start a Discussion</h2>
+        <form id="newPostForm">
+          <textarea
+            id="postContent"
+            placeholder="What's on your mind?"
+            required
+          ></textarea>
+          <button type="submit">Post</button>
+        </form>
+      </section>
+
+      <section class="posts">
+        <h2>Recent Discussions</h2>
+        <div id="postList">
+          <!-- Dynamic posts will appear here -->
+        </div>
       </section>
     </main>
+
+    <footer class="forum-footer">
+      <p>&copy; 2024 Community Forum. All Rights Reserved.</p>
+    </footer>
+
+    <script src="community_forum.js"></script>
   </body>
 </html>
