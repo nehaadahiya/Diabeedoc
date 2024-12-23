@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 10px;
     background-color: #f4f4f9;
     color: #333;
 }
@@ -41,7 +41,7 @@ main {
 }
 #hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 10px;
     background-color: #caf0f8;
 }
 
@@ -50,16 +50,27 @@ main {
     margin: 0 0 10px;
 }
 
+.two{
+    display: flex;
+    flex-direction:row-reverse;
+    text-align: right;
+    justify-content:center;
+}
+
 #hero p {
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin-bottom: 20px;
+    text-align: center;
+    max-width: 50%;
 }
 
 #hero img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 10px;
+    max-width: 600px;
+    height: 187px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    padding-left: 0;
+    align-items: center;
 }
 
 #hero button {
