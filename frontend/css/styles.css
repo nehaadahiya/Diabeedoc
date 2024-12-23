@@ -60,7 +60,19 @@ nav ul li a:hover {
     background-color: #00b4d8;
     transform: scale(1.1);
 }
-
+.container {
+    padding: 20px;
+    font-size: 1.8em;
+}
+.about{
+    display: flex;
+    flex-direction:row;
+}
+img{
+    width: 400px; 
+    height: "87px";
+}
+   
 /* Hero Section */
 #hero {
     background: linear-gradient(135deg, #caf0f8, #90e0ef);
@@ -207,7 +219,25 @@ nav ul li a:hover {
     background-color: #00b4d8;
     transform: translateY(-5px);
 }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
 
+form input, form button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 /* Footer */
 footer {
     background-color: #023e8a;

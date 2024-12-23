@@ -28,7 +28,6 @@
     <section id="hero">
       <div class="two">
         <p>
-          Welcome to Diabeedoc!<br />
           At Diabeedoc, we are dedicated to helping diabetic patients make
           informed dietary decisions. Our platform offers a personalized food
           recommendation engine, a vibrant community forum for sharing
@@ -49,15 +48,28 @@
       </button>
     </section>
 
-    <section id="about">
+    <section class="container">
       <h2>About Us</h2>
-      <img src="/static/images/about.jpg" alt="About Diabeedoc"
-      class="section-image"style="max-width: 600px; height: auto; />
-      <p>
-        Diabeedoc is a smart tool dedicated to helping diabetic patients manage
-        their diets effectively through personalized recommendations and
-        community support.
-      </p>
+      <div>
+        <div class="about">
+          <img src="/static/images/about.jpg" alt="About Us Image" />
+          <p>
+            Diabeedoc is dedicated to helping diabetic patients manage their
+            diets effectively through personalized recommendations and community
+            support.A web-based food recommendation system for diabetic
+            patients. The project integrates a machine learning model (Random
+            Forest) to evaluate the healthiness of food items based on a
+            provided dataset.The system accepts a food item input from the user.
+            It matches the input to a dataset containing nutritional information
+            (carbs, protein, fat, fiber), calories per 100 grams, and glycemic
+            index (GI). Using a Random Forest model, the system evaluates if the
+            food is healthy or not for diabetic patients, returning the
+            recommendation as "Recommended" or "Not Recommended." The results
+            display the glycemic index and calories per 100 grams of the queried
+            food item.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="features">
