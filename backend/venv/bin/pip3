@@ -1,4 +1,4 @@
-#!/Users/nehadahiya/Documents/Diabeedoc/backend/venv/bin/python3.13
+#!/Users/nehadahiya/Documents/Diabeedoc/backend/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
