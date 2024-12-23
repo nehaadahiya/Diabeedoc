@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community Forum</title>
     <title>Diabeedoc Community Forum</title>
+    <link rel="stylesheet" href="/frontend/css/forum.css" />
   </head>
   <body>
     <header class="forum-header">
       <h1>Diabeedoc Community Forum</h1>
       <p>Connect with others, share knowledge, and support one another.</p>
       <div class="search-bar">
-        <input type="text" id="search" placeholder="Search discussions..." />
+        <input
+          type="text"
+          id="search"
+          placeholder="Search discussions..."
+          oninput="searchDiscussions()"
+        />
         <button onclick="searchDiscussions()">Search</button>
       </div>
     </header>
@@ -30,7 +35,8 @@
             id="discussionBody"
             placeholder="Write your thoughts here..."
             required
-          ></textarea>
+          >
+          </textarea>
           <button type="submit">Post Discussion</button>
         </form>
       </section>
@@ -43,18 +49,6 @@
       </section>
     </main>
 
-    <script src="forum.js"></script>
+    <script src="/frontend/js/forum.js"></script>
   </body>
 </html>
-<!-- <body>
-    <header>
-      <h1>Community Forum</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Discussions</h2>
-        <p>Join the discussion and connect with others!</p>
-      </section>
-    </main>
-  </body>
-</html> -->
