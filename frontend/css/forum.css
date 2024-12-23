@@ -1,9 +1,9 @@
 
 /* rESET DEFAULT MARGIN/PADDING */
 * {
-MARGIN: 0;
-PADDING: 0;
-BOX-SIZING: BORDER-BOX;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 /* General styles */
@@ -60,12 +60,14 @@ background-color: #38733D;
 /* Main content */
 main {
 padding: 20px;
-max-width: 800px;
-margin: auto;
+max-width: 80%;
+margin: 20 px auto;
 }
 
 .new-discussion {
 background-color: white;
+max-width: 100%;
+margin: auto;
 padding: 20px;
 margin-bottom: 20px;
 border-radius: 5px;
@@ -100,6 +102,8 @@ background-color: #45a049;
 
 .discussion-list {
 background-color: white;
+max-width: 100%;
+margin: auto;
 padding: 20px;
 border-radius: 5px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
