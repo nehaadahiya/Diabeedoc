@@ -65,3 +65,72 @@ newPostForm.addEventListener("submit", function (event) {
   // Clear the form
   document.getElementById("postContent").value = "";
 });
+
+//login page // Store users in a simple object (in real applications, use a database)
+const users = {};
+
+// Show Registration Form
+document
+  .getElementById("showRegister")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "block";
+  });
+
+// Show Login Form
+document
+  .getElementById("showLogin")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("registerForm").style.display = "none";
+    document.getElementById("loginForm").style.display = "block";
+  });
+
+// Handle Registration
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const newUsername = document.getElementById("newUsername").value.trim();
+    const newPassword = document.getElementById("newPassword").value.trim();
+
+    if (!newUsername || !newPassword) {
+      alert("Both fields are required. Please fill in all fields.");
+      return;
+    }
+
+    if (users[newUsername]) {
+      alert("Username already exists. Please choose a different username.");
+    } else {
+      users[newUsername] = newPassword; // Add new user
+      alert("Registration successful! Please log in.");
+      document.getElementById("registerForm").reset();
+      document.getElementById("registerForm").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+    }
+  });
+
+// Handle Login
+document
+  .getElementById("loginForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (!username || !password) {
+      alert("Both fields are required. Please fill in all fields.");
+      return;
+    }
+
+    if (users[username] && users[username] === password) {
+      alert("Login successful! Redirecting to your dashboard...");
+      window.location.href = "dashboard.html"; // Example redirection
+    } else {
+      alert("Invalid username or password. Please try again.");
+      document.getElementById("password").value = ""; // Clear password field
+    }
+  });
