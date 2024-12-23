@@ -4,49 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community Forum</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Diabeedoc Community Forum</title>
   </head>
   <body>
     <header class="forum-header">
-      <h1>Community Forum</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-      </nav>
+      <h1>Diabeedoc Community Forum</h1>
+      <p>Connect with others, share knowledge, and support one another.</p>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search discussions..." />
+        <button onclick="searchDiscussions()">Search</button>
+      </div>
     </header>
-    <section>
-      <h2>Discussions</h2>
-      <p>Join the discussion and connect with others!</p>
-    </section>
+
     <main class="forum-content">
-      <section class="new-post">
-        <h2>Start a Discussion</h2>
-        <form id="newPostForm">
+      <section class="new-discussion">
+        <h2>Start a New Discussion</h2>
+        <form id="newDiscussionForm">
+          <input
+            type="text"
+            id="discussionTitle"
+            placeholder="Discussion Title"
+            required
+          />
           <textarea
-            id="postContent"
-            placeholder="What's on your mind?"
+            id="discussionBody"
+            placeholder="Write your thoughts here..."
             required
           ></textarea>
-          <button type="submit">Post</button>
+          <button type="submit">Post Discussion</button>
         </form>
       </section>
 
-      <section class="posts">
+      <section class="discussion-list">
         <h2>Recent Discussions</h2>
-        <div id="postList">
-          <!-- Dynamic posts will appear here -->
-        </div>
+        <ul id="discussions">
+          <!-- Discussion threads will dynamically populate here -->
+        </ul>
       </section>
     </main>
 
-    <footer class="forum-footer">
-      <p>&copy; 2024 Community Forum. All Rights Reserved.</p>
-    </footer>
-
-    <script src="community_forum.js"></script>
+    <script src="forum.js"></script>
   </body>
 </html>
+<!-- <body>
+    <header>
+      <h1>Community Forum</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Discussions</h2>
+        <p>Join the discussion and connect with others!</p>
+      </section>
+    </main>
+  </body>
+</html> -->
