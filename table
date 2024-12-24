@@ -1,0 +1,27 @@
+CREATE TABLE FoodDat (
+    food_id INT AUTO_INCREMENT PRIMARY KEY,
+    FoodName VARCHAR(255) NOT NULL,
+    Carbs DECIMAL(5,2),
+    Protein DECIMAL(5,2),
+    Fat DECIMAL(5,2),
+    Fiber DECIMAL(5,2),
+    Calories INT,
+    Glycemic_Index INT
+);
+
+-- Insert sample data
+INSERT INTO FoodDat (FoodName, Carbs, Protein, Fat, Fiber, Calories, Glycemic_Index)
+VALUES 
+('Whole Milk', 4.8, 3.2, 3.3, 0, 61, 32),
+('Cheddar Cheese', 1.3, 24.9, 33.1, 0, 402, 0),
+('Greek Yogurt', 3.6, 10, 4, 0, 97, 11),
+('Cottage Cheese', 3.4, 11.1, 4.3, 0, 98, 30),
+('White Bread', 49.2, 9, 3.2, 2.7, 265, 75),
+('Whole Wheat Bread', 43, 13.2, 2.5, 7.4, 247, 71),
+('Almonds', 21.7, 21.2, 49.4, 12.5, 579, 0),
+('Eggs', 1.1, 13, 11, 0, 155, 0),
+('Pork (Lean)', 0, 27, 14, 0, 242, 0),
+('Salmon (Cooked)', 0, 22, 12, 0, 206, 0),
+('Egg (Whole)', 1.1, 13, 10.6, 0, 155, 0),
+('Chicken Breast (Cooked)', 0, 31, 3.6, 0, 165, 0),
+('Beef (Lean)', 0, 26, 15, 0, 250, 0);
