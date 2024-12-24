@@ -76,11 +76,34 @@ nav ul li a:hover {
 }
 
 /* Contact Us Page */
+div{
+    display:flex;
+    flex-direction: row;
+    margin:10px;
+    padding:0;
+}
+div p {
+    font-size: 1.8rem;
+    max-width: 40%;
+    margin: 10px auto;
+}
+p {
+    font-size: 1.8rem;
+    max-width: 80%;
+    margin: 10px auto;
+}
+div img {
+    max-width: 60%;
+    height: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
 #contact-us {
     text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
 }
 
 #contact-us ul {
