@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005bb5;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003d80;
+    border-radius: 5px;
+}
+/* Healthy Tips Carousel */
+#healthy-tips-carousel {
+    margin: 20px 0;
+}
+
+#healthy-tips-carousel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    border-radius: 10px;
+}
+
+/* Recipe Cards */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Contact Us Page */
+#contact-us {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#contact-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-us ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #0073e6;
+}
+
+/* Recipe Cards */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.recipe-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Healthy Tips Section */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tip-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #0073e6;
+}
+
+.tip-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Newsletter Section */
+#newsletter {
+    background: linear-gradient(135deg, #90e0ef, #caf0f8);
+    text-align: center;
+    padding: 40px 20px;
+    color: #023e8a;
+}
+
+#newsletter form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid #023e8a;
+    width: 300px;
+}
+
+#newsletter button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#newsletter button:hover {
+    background-color: #00b4d8;
+    transform: translateY(-5px);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Footer */
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #90e0ef;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-caption {
+        bottom: 5%;
+        font-size: 0.9rem;
+    }
+
+    .recipe-card img {
+        height: 150px;
+    }
+
+    .tip-card {
+        padding: 10px;
+    }
+}

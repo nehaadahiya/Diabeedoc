@@ -3,18 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Blog</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Diabetes-Friendly Recipes</title>
+    <link rel="stylesheet" href="/frontend/css/recipes.css" />
   </head>
   <body>
     <header>
       <h1>Diabetes-Friendly Recipes</h1>
+      <nav>
+        <ul>
+          <li><a href="recipes.html">Home</a></li>
+          <li><a href="latestrecipes.html">Latest Recipes</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section>
-        <h2>Our Latest Recipes</h2>
-        <p>Explore delicious, diabetes-friendly recipes.</p>
-      </section>
+    <!-- Healthy Tips Carousel -->
+    <section id="healthy-tips-carousel">
+      <h2>Healthy Tips for Diabetes</h2>
+      <div class="carousel">
+        <div class="carousel-item active">
+          <img src="images/tip1.jpg" alt="Healthy Tip 1">
+          <div class="carousel-caption">
+            <h3>Eat More Fiber</h3>
+            <p>Incorporate vegetables, fruits, and whole grains into your meals.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/tip2.jpg" alt="Healthy Tip 2">
+          <div class="carousel-caption">
+            <h3>Monitor Carb Intake</h3>
+            <p>Track the carbs you consume to maintain steady blood sugar levels.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/tip3.jpg" alt="Healthy Tip 3">
+          <div class="carousel-caption">
+            <h3>Stay Hydrated</h3>
+            <p>Drink plenty of water and avoid sugary drinks.</p>
+          </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-control next" onclick="nextSlide()">❯</button>
+      </div>
+    </section>
+
     </main>
+
+    <section id="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <img
+        src="/static/images/newsletter.jpg"
+        alt="Newsletter Subscription"
+        class="section-image"
+      />
+      <form id="newsletterForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Diabeedoc. All rights reserved.</p>
+      <p>
+        Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and
+        <a href="#">Instagram</a>.
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

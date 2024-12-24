@@ -48,7 +48,9 @@ let discussions = [
   
     filteredDiscussions.forEach(discussion => {
       const listItem = document.createElement("li");
-      listItem.innerHTML = <strong>${discussion.title}</strong><p>${discussion.body}</p>;
+      listItem.innerHTML = 
+      <strong>${discussion.title}</strong>
+      <p>${discussion.body}</p>;
       discussionsList.appendChild(listItem);
     });
   }
