@@ -1,0 +1,10 @@
+import mysql.connector
+
+connection = mysql.connector.connect(
+    host="localhost",  # your MySQL host
+    user="root",       # your MySQL username
+    password="password",  # your MySQL password
+    database="fooddb"  # replace with your database name
+)
+
+cursor = connection.cursor()
