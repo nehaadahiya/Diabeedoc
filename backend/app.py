@@ -2,11 +2,12 @@ from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
 from flask_cors import CORS
+import os #for accessing env variables
 
 app = Flask(__name__)
 CORS(app)
 
-# Load the trained Random Forest model
+# Loading the trained Random Forest model
 model = joblib.load('./model/random_forest_model.pkl')
 
 # Load the dataset containing food details
@@ -50,4 +51,7 @@ def recommend():
         return jsonify({'error': str(e)})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # app.run(debug=True)
+    #bind to 0.0.0.0 and use the port env variable for deployment
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host="0.0.0.0", port=port)
