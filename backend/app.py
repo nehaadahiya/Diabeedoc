@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, send_from_directory, jsonify, request
 import joblib
 import pandas as pd
 from flask_cors import CORS
@@ -12,6 +12,16 @@ model = joblib.load('./model/random_forest_model.pkl')
 
 # Load the dataset containing food details
 food_data = pd.read_csv('./dataset/food_data.csv')
+
+@app.route('/')
+def index():
+    return send_from_directory('../frontend', 'index.html')
+
+# Serve other HTML and static files
+@app.route('/<path:filename>')
+
+def frontend_files(filename):
+    return send_from_directory('../frontend', filename)
 
 @app.route('/recommend', methods=['POST'])
 def recommend():
