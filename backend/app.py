@@ -13,16 +13,6 @@ model = joblib.load('./model/random_forest_model.pkl')
 # Load the dataset containing food details
 food_data = pd.read_csv('./dataset/food_data.csv')
 
-@app.route('/')
-def index():
-    return send_from_directory('../frontend', 'index.html')
-
-# Serve other HTML and static files
-@app.route('/<path:filename>')
-
-def frontend_files(filename):
-    return send_from_directory('../frontend', filename)
-
 @app.route('/recommend', methods=['POST'])
 def recommend():
     try:
